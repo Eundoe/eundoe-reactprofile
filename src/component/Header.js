@@ -13,7 +13,9 @@ function Header(){
             <li><Link to='/portfolio'>Portfolio</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
+          <p id="hclose">Close</p>
         </nav>
+        <p id="hmenu">Menu</p>
       </div>
     </header>
   )
