@@ -11,25 +11,24 @@ function SkillGuage(){
 }
 
 
-function SkillDetail(){
-  let array3 = [1,2,3,4,5,6,7,8,9,10,11,12]
-  return array3.map((item,index) => {
+function SkillDetail({bdata}){
+  return bdata.map((item,index) => {
     return(
       <li key={index}>
-        <img src="" alt=""/>
+        <img src= {item.path} alt={item.name}/>
       </li>
     )
   })
 }
 
 
-function Skill({t}){
+function Skill({t, bdata}){
   return(
     <article id="skill">
       <div id="skillwrap">
         <h2>{t('menu.skill')}</h2>
         <ul>
-          <SkillDetail/>
+          <SkillDetail bdata ={bdata} />
         </ul>
         <SkillGuage />
       </div>

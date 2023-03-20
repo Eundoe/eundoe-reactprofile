@@ -1,52 +1,54 @@
 
+import {RiToolsFill, RiCalendar2Fill} from "react-icons/ri"
+import {BiLinkAlt, BiLinkExternal} from "react-icons/bi"
+import {HiOutlineTicket} from "react-icons/hi"
 
-
-function PortDetail({t}){
+function PortDetail({t, item}){
     return (
       <div>
-      <dl >
+      <dl>
         <dt>
-          <span>icon</span>
+          <span><RiCalendar2Fill/></span>
           <span>{t('portfolio.kind.period')}</span>
         </dt>
         <dd>
-          컨텐츠
+          {item.period}
         </dd>
       </dl>
       <dl >
         <dt>
-          <span>icon</span>
+          <span><RiToolsFill/></span>
           <span>{t('portfolio.kind.devtool')}</span>
         </dt>
         <dd>
-          컨텐츠
+          {item.lang}
         </dd>
       </dl>
       <dl >
         <dt>
-          <span>icon</span>
+          <span><BiLinkAlt/></span>
           <span>{t('portfolio.kind.domain')}</span>
         </dt>
         <dd>
-          컨텐츠
+          {item.path}
         </dd>
       </dl>
       <dl >
         <dt>
-          <span>icon</span>
+          <span><BiLinkExternal/></span>
           <span>{t('portfolio.kind.github')}</span>
         </dt>
         <dd>
-          컨텐츠
+          {item.giturl}
         </dd>
       </dl>
       <dl >
         <dt>
-          <span>icon</span>
+          <span><HiOutlineTicket/></span>
           <span>{t('portfolio.kind.detail')}</span>
         </dt>
         <dd>
-          컨텐츠
+          Click Here
         </dd>
       </dl>
       </div>
@@ -54,28 +56,27 @@ function PortDetail({t}){
 }
 
 
-function PortList({t}){
-  let array4 = [1,2,3]
-  return array4.map((item,index) => {
+function PortList({t, bdata}){
+  return bdata.map((item,index) => {
     return(
       <li key={index}>
-        <h3>PJ Title</h3>
+        <h3>{item.pjname}</h3>
         <div id="portdetail">
-          <img src="" alt=""/>
-          <PortDetail t = {t}/>       
+          <img src={item.img} alt={item.pjname}/>
+          <PortDetail t = {t} item ={item}/>       
         </div>
       </li>
     )
   })
 }
 
-function Portfolio({t}){
+function Portfolio({t, bdata}){
   return(
     <article id="portfolio">
       <div id="portwrap">
         <h2>{t('menu.portfolio')}</h2>
         <ul>
-          <PortList t = {t}/>
+          <PortList t = {t} bdata = {bdata}/>
         </ul>
       </div>
     </article>

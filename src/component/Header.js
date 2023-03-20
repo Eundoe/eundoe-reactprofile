@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
+import {AiOutlineClose} from "react-icons/ai"
+import {CgMenuGridR} from "react-icons/cg"
 
 function Header({t}){
 
   return(
     <header>
       <div id="headwrap">
-        <h1>Logo</h1>
+        <h1><img src="./Images/Logo.png" alt="Logo"/></h1>
         <nav id="hnav">
           <ul>
             <li><Link to='/'>{t('menu.home')}</Link></li>
@@ -14,9 +16,9 @@ function Header({t}){
             <li><Link to='/portfolio'>{t('menu.portfolio')}</Link></li>
             <li><Link to='/contact'>{t('menu.contact')}</Link></li>
           </ul>
-          <p id="hclose">Close</p>
+          <p id="hclose"><AiOutlineClose /></p>
         </nav>
-        <p id="hmenu">Menu</p>
+        <p id="hmenu"><CgMenuGridR/></p>
       </div>
     </header>
   )

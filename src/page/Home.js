@@ -1,4 +1,5 @@
 
+import {GrNext, GrPrevious} from "react-icons/gr"
 
 function Slogun({slogun, picture}){
   return picture.map((item, index) => {
@@ -21,8 +22,8 @@ function Home({t, slogun}){
             <Slogun slogun = {t} picture = {slogun}/>
           </ul>
         </div>
-      <p className="next">next</p>
-      <p className="prev">prev</p>
+      <p className="next"><GrNext/></p>
+      <p className="prev"><GrPrevious/></p>
       </div>
     </article>
   )

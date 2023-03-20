@@ -185,19 +185,19 @@
   "slogun" : [
     {
       "id" : 0,
-      "bg" : "../static/image/slogun/back1.png"
+      "bg" : "./Images/slogun/back1.png"
     },
     {
       "id" : 1,
-      "bg" : "../static/image/slogun/back2.png"
+      "bg" : "./Images/slogun/back2.png"
     },
     {
       "id" : 2,
-      "bg" : "../static/image/slogun/back3.png"
+      "bg" : "./Images/slogun/back3.png"
     },
     {
       "id" : 3,
-      "bg" : "../static/image/slogun/back4.png"
+      "bg" : "./Images/slogun/back4.png"
     }
   ],
   "skill" : [
@@ -205,80 +205,80 @@
       "id" : 0, 
       "name" : "HTML5",
       "master" : 95,
-      "path" : "./image/icons/html5.png"
+      "path" : "./Images/icons/html5.png"
     },
     {
       "id" : 1, 
       "name" : "CSS3",
       "master" : 95,
-      "path" : "./image/icons/css3.png"
+      "path" : "./Images/icons/css3.png"
     },
     {
       "id" : 2, 
       "name" : "Javascript",
       "master" : 75,
-      "path" : "./image/icons/javascript.png"
+      "path" : "./Images/icons/javascript.png"
     },
     {
       "id" : 3, 
       "name" : "jQuery",
       "master" : 80,
-      "path" : "./image/icons/jquery.png"
+      "path" : "./Images/icons/jquery.png"
     },
     {
       "id" : 4, 
       "name" : "Vue",
       "master" : 40,
-      "path" : "./image/icons/vue.png"
+      "path" : "./Images/icons/vue.png"
     },
     {
       "id" : 5, 
       "name" : "React",
       "master" : 50,
-      "path" : "./image/icons/react.png"
+      "path" : "./Images/icons/react.png"
     },
     {
       "id" : 6, 
       "name" : "NPM",
       "master" : 60,
-      "path" : "./image/icons/npm.png"
+      "path" : "./Images/icons/npm.png"
     },
     {
       "id" : 7, 
       "name" : "Parcel-Bundler",
       "master" : 80,
-      "path" : "./image/icons/parcel.png"
+      "path" : "./Images/icons/parcel.png"
     },
     {
       "id" : 8, 
       "name" : "Webpack",
       "master" : 60,
-      "path" : "./image/icons/webpack.png"
+      "path" : "./Images/icons/webpack.png"
     },
     {
       "id" : 9, 
       "name" : "Firezilla",
       "master" : 50,
-      "path" : "./image/icons/firezilla.png"
+      "path" : "./Images/icons/firezilla.png"
     },
     {
       "id" : 10, 
       "name" : "Netlify",
       "master" : 50,
-      "path" : "./image/icons/netlify.png"
+      "path" : "./Images/icons/netlify.png"
     },
     {
       "id" : 11, 
       "name" : "Git",
       "master" : 60,
-      "path" : "./image/icons/git.png"
+      "path" : "./Images/icons/git.png"
     }
     ],
     "portfolio" : [
       {
         "id" : 0,
         "pjname" : "Sports SpringFesta",
-        "img" : "./image/portfolio/sportsshops.png",
+        "img" : "./Images/portfolio/sportsshops.png",
         "path" : "https://eundoe-sportsspring.s3.ap-northeast-2.amazonaws.com/index.html",
         "lang" : "HTML, CSS, JS, jQuery",
         "period" : "2023.01.09 ~ 2023.02.27",
@@ -287,7 +287,7 @@
       {
         "id" : 1,
         "pjname" : "LeatherProduct Shop",
-        "img" : "./image/portfolio/leathershop.png",
+        "img" : "./Images/portfolio/leathershop.png",
         "path" : "http://eundoe-leather.s3-website.ap-northeast-2.amazonaws.com/",
         "lang" : "HTML, CSS, React, jQuery",
         "period" : "2023.01.09 ~ 2023.02.27",
@@ -296,7 +296,7 @@
       {
         "id" : 2,
         "pjname" : "Tour Booking",
-        "img" : "./image/portfolio/tourbook.png",
+        "img" : "./Images/portfolio/tourbook.png",
         "path" : "http://eundoe-tourbooking.s3-website.ap-northeast-2.amazonaws.com",
         "lang" : "HTML, CSS, React, jQuery",
         "period" : "2023.02.18 ~ 2023.02.27",
