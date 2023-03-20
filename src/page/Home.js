@@ -1,25 +1,24 @@
 
 
-function Slogun(){
-  let arrayex = [1,2,3,4]
-  return arrayex.map((item,index) => {
-    return(
-      <li>
-        <h2>Slogun{item}</h2>
+function Slogun({slogun, picture}){
+  return picture.map((item, index) => {
+    return (
+      <li key={index}>
+        <p>{slogun('slogun.' + index)}</p>
       </li>
     )
   })
-
+  
 }
 
 
-function Home(){
+function Home({t, slogun}){
   return(
     <article id="home">
       <div id="homewrap">
         <div id="slogungall">
           <ul>
-            <Slogun/>
+            <Slogun slogun = {t} picture = {slogun}/>
           </ul>
         </div>
       <p className="next">next</p>

@@ -1,0 +1,306 @@
+{
+  "lng" : {
+    "kr" : {
+      "menu" : {
+        "home" : "홈",
+        "about" : "나의 이야기",
+        "skill" : "스킬트리",
+        "portfolio" : "작업물",
+        "contact" : "연락처"
+      },
+      "slogun" : [
+        "배움에는 끝이없다.",
+        "시작하기전에 생각하라",
+        "저질렀다면 끝까지 해라",
+        "어제의 나보다 더 나아진 내가 되라"
+      ],
+      "private" : {
+        "name" : {
+          "kind" : "이름",
+          "content" : "조재호"
+        },
+        "birth" : {
+          "kind" : "생일",
+          "content" : "1992.09.09"
+        },
+        "major" : {
+          "kind" : "전공",
+          "content" : "경제학"
+        },
+        "hobby" : {
+          "kind" : "취미",
+          "content" : "가죽공예"
+        },
+        "creed" : {
+          "kind" : "신조",
+          "content" : "오늘도 나는 사과나무를 심는다."
+        }
+        
+      },
+      "portfolio" : {
+        "kind" : {
+          "period" : "제작기간",
+          "devtool" : "개발도구",
+          "domain" : "도메인",
+          "github" : "깃허브",
+          "detail" : "상세보기"
+        }
+      },
+      "contact" : {
+        "mypriv" : {
+          "chat" : "오픈톡",
+          "email" : "이메일",
+          "phone" : "전화번호"
+        },
+        "form" : {
+          "name" : "이름",
+          "email" : "이메일",
+          "phone" : "전화번호",
+          "message" : "메세지",
+          "send" : "보내기"
+        }
+      }
+    },
+    "en" : {
+      "menu" : {
+        "home" : "Home",
+        "about" : "About",
+        "skill" : "Skill",
+        "portfolio" : "Portfolio",
+        "contact" : "Contact"
+      },
+      "slogun" : [
+        "Learning never ends.", 
+        "Start with an idea.", 
+        "Do my best to finish the work<br/> I set out.", 
+        "Be a better version of yourself<br/> than you were yesterday."
+      ],
+      "private" : {
+        "name" : {
+          "kind" : "Name",
+          "content" : "Jaeho.Cho"
+        },
+        "birth" : {
+          "kind" : "Birth",
+          "content" : "1992/09/09"
+        },
+        "major" : {
+          "kind" : "Major",
+          "content" : "Economy"
+        },
+        "hobby" : {
+          "kind" : "Hobby",
+          "content" : "Leather Craft"
+        },
+        "creed" : {
+          "kind" : "Creed",
+          "content" : "Plant an apple tree today."
+        }
+      },
+      "portfolio" : {
+        "kind" : {
+          "period" : "Period",
+          "devtool" : "DevTool",
+          "domain" : "Domain",
+          "github" : "GitHub",
+          "detail" : "Detail"
+        }
+      },
+      "contact" : {
+        "mypriv" : {
+          "chat" : "ChatOn",
+          "email" : "Email",
+          "phone" : "Phone"
+        },
+        "form" : {
+          "name" : "Name",
+          "email" : "Email",
+          "phone" : "Phone",
+          "message" : "Message",
+          "send" : "Send"
+        }
+      }
+    },
+    "jp" : {
+      "menu" : {
+        "home" : "ホーム",
+        "about" : "私の物語",
+        "skill" : "スキル",
+        "portfolio" : "ポートフォリオ",
+        "contact" : "コンタクト"
+      },
+      "slogun" : [
+        "学びに終わりはない",
+        "考えてから始める",
+        "やっちゃったら最後まで尽くせ",
+        "昨日より発展した私になれ"
+      ],
+      "private" : {
+        "name" : {
+          "kind" : "名前",
+          "content" : "趙ジェホ"
+        },
+        "birth" : {
+          "kind" : "誕生日",
+          "content" : "平成4年九月九日"
+        },
+        "major" : {
+          "kind" : "専攻",
+          "content" : "経済学"
+        },
+        "hobby" : {
+          "kind" : "趣味",
+          "content" : "皮工芸"
+        },
+        "creed" : {
+          "kind" : "一言",
+          "content" : "今日も私はリンゴの木を植える"
+        }
+      },
+      "portfolio" : {
+        "kind" : {
+          "period" : "製作期間",
+          "devtool" : "開発環境",
+          "domain" : "ドメイン",
+          "github" : "開発ページ",
+          "detail" : "詳しく"
+        }
+      },
+      "contact" : {
+        "mypriv" : {
+          "chat" : "チャット",
+          "email" : "メール",
+          "phone" : "電話番号"
+        },
+        "form" : {
+          "name" : "名前",
+          "email" : "メール",
+          "phone" : "電話番号",
+          "message" : "メッセージ",
+          "send" : "送る"
+        }
+      }
+    }
+  },
+  "slogun" : [
+    {
+      "id" : 0,
+      "bg" : "../static/image/slogun/back1.png"
+    },
+    {
+      "id" : 1,
+      "bg" : "../static/image/slogun/back2.png"
+    },
+    {
+      "id" : 2,
+      "bg" : "../static/image/slogun/back3.png"
+    },
+    {
+      "id" : 3,
+      "bg" : "../static/image/slogun/back4.png"
+    }
+  ],
+  "skill" : [
+    {
+      "id" : 0, 
+      "name" : "HTML5",
+      "master" : 95,
+      "path" : "./image/icons/html5.png"
+    },
+    {
+      "id" : 1, 
+      "name" : "CSS3",
+      "master" : 95,
+      "path" : "./image/icons/css3.png"
+    },
+    {
+      "id" : 2, 
+      "name" : "Javascript",
+      "master" : 75,
+      "path" : "./image/icons/javascript.png"
+    },
+    {
+      "id" : 3, 
+      "name" : "jQuery",
+      "master" : 80,
+      "path" : "./image/icons/jquery.png"
+    },
+    {
+      "id" : 4, 
+      "name" : "Vue",
+      "master" : 40,
+      "path" : "./image/icons/vue.png"
+    },
+    {
+      "id" : 5, 
+      "name" : "React",
+      "master" : 50,
+      "path" : "./image/icons/react.png"
+    },
+    {
+      "id" : 6, 
+      "name" : "NPM",
+      "master" : 60,
+      "path" : "./image/icons/npm.png"
+    },
+    {
+      "id" : 7, 
+      "name" : "Parcel-Bundler",
+      "master" : 80,
+      "path" : "./image/icons/parcel.png"
+    },
+    {
+      "id" : 8, 
+      "name" : "Webpack",
+      "master" : 60,
+      "path" : "./image/icons/webpack.png"
+    },
+    {
+      "id" : 9, 
+      "name" : "Firezilla",
+      "master" : 50,
+      "path" : "./image/icons/firezilla.png"
+    },
+    {
+      "id" : 10, 
+      "name" : "Netlify",
+      "master" : 50,
+      "path" : "./image/icons/netlify.png"
+    },
+    {
+      "id" : 11, 
+      "name" : "Git",
+      "master" : 60,
+      "path" : "./image/icons/git.png"
+    }
+    ],
+    "portfolio" : [
+      {
+        "id" : 0,
+        "pjname" : "Sports SpringFesta",
+        "img" : "./image/portfolio/sportsshops.png",
+        "path" : "https://eundoe-sportsspring.s3.ap-northeast-2.amazonaws.com/index.html",
+        "lang" : "HTML, CSS, JS, jQuery",
+        "period" : "2023.01.09 ~ 2023.02.27",
+        "giturl" : "https://github.com/Eundoe/eundoe-sportsshopPVPF"
+      },
+      {
+        "id" : 1,
+        "pjname" : "LeatherProduct Shop",
+        "img" : "./image/portfolio/leathershop.png",
+        "path" : "http://eundoe-leather.s3-website.ap-northeast-2.amazonaws.com/",
+        "lang" : "HTML, CSS, React, jQuery",
+        "period" : "2023.01.09 ~ 2023.02.27",
+        "giturl" : "https://github.com/Eundoe/eundoe-leathershopPVPF"
+      },
+      {
+        "id" : 2,
+        "pjname" : "Tour Booking",
+        "img" : "./image/portfolio/tourbook.png",
+        "path" : "http://eundoe-tourbooking.s3-website.ap-northeast-2.amazonaws.com",
+        "lang" : "HTML, CSS, React, jQuery",
+        "period" : "2023.02.18 ~ 2023.02.27",
+        "giturl" : "https://github.com/Eundoe/eundoe-tourbookingPVPF"
+      }
+    ]
+}
