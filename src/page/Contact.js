@@ -1,8 +1,61 @@
 import {RiKakaoTalkLine} from "react-icons/ri"
 import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai"
 import './Contact.css'
+import { useState } from "react"
+
+
+
+function SendResult({check, t}){
+  return(
+    <div id="sendmodal" style={{display:"none"}}>
+      <div id="modalwrap">
+        <p>
+          {(check === true) ? t('contact.send.compl') : t('contact.send.wrong.0')+" "+ check.join(',') +" "+ t('contact.send.wrong.1')}
+        </p>
+        <p id="modalclose" onClick={() => {document.querySelector('div#sendmodal').style.display = "none"}}>{t('contact.send.close')}</p>
+      </div>
+    </div>
+  )
+}
+
+
 
 function Contact({t, bdata}){
+  const [check, setCheck] = useState([1])
+ 
+
+  function SendMessage(e){
+    e.preventDefault()
+    let message = {
+      name : document.querySelector('input#uname').value,
+      email : document.querySelector('input#umail').value,
+      phone : document.querySelector('input#uphone').value,
+      msg : document.querySelector('input#uname').value
+    }
+    let alert = []
+    if ((/^[가-힣|a-z|A-Z]+$/.test(message.name)) !== true || message.name === null){
+      alert.push(t('contact.form.name'))
+    }
+    if ((/\d{3}-\d{3,4}-\d{4}$/.test(message.phone)) !== true || message.phone === null){
+      alert.push(t('contact.form.phone'))
+    }
+    if ((/(^[-_.]?[0-9a-zA-Z]{4,13})+\@([0-9a-z]+)\.([a-z]{2,3})$/i.test(message.email)) !== true || message.email === null){
+      alert.push(t('contact.form.email'))
+    }
+    if (alert.length > 0){
+      setCheck(alert)
+      document.querySelector('div#sendmodal').style.display = "flex"
+    }
+    else{
+      setCheck(true)
+      document.querySelector('div#sendmodal').style.display = "flex"
+    }
+
+
+  }
+
+
+
   return(
     <article id="contact">
       <div id="contwrap">
@@ -46,27 +99,28 @@ function Contact({t, bdata}){
                 <ul>
                   <li>
                     <label htmlFor="uname">{t('contact.form.name')}</label>
-                    <input id="uname" type="text"/>
+                    <input id="uname" type="text" placeholder={t('contact.pholder.name')}/>
                   </li>
                   <li>
                     <label htmlFor="uphone">{t('contact.form.phone')}</label>
-                    <input id="uphone" type="text"/>
+                    <input id="uphone" type="text" placeholder={t('contact.pholder.phone')} />
                   </li>
                   <li>
                     <label htmlFor="umail">{t('contact.form.email')}</label>
-                    <input id="umail" type="text"/>
+                    <input id="umail" type="text" placeholder={t('contact.pholder.email')}/>
                   </li>
                   <li>
                     <label htmlFor="umessage">{t('contact.form.message')}</label>
                     <textarea id="umessage" cols="30" rows="10"/>
                   </li>
                 </ul>
-                <button>{t('contact.form.send')}</button>
+                <button onClick={(e) => {return SendMessage(e)}}>{t('contact.form.send')}</button>
               </legend>
             </fieldset>
           </form>
         </div>
       </div>
+      <SendResult t = {t} check = {check}/>
     </article>
   )
 }

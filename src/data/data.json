@@ -62,6 +62,16 @@
           "phone" : "전화번호",
           "message" : "메세지",
           "send" : "보내기"
+        },
+        "pholder" : {
+          "name" : "영문 또는 한글",
+          "phone" : "000-0000-0000",
+          "email" : "abc@yourdomain.com"
+        },
+        "send" : {
+          "wrong" : ["잘못된", "입니다."],
+          "compl" : "송부완료",
+          "close" : "닫기"
         }
       }
     },
@@ -76,8 +86,8 @@
       "slogun" : [
         "Learning never ends.", 
         "Start with an idea.", 
-        "Do my best to finish the work<br/> I set out.", 
-        "Be a better version of yourself<br/> than you were yesterday."
+        "Do my best to finish the work I set out.", 
+        "Be a better version of yourself than you were yesterday."
       ],
       "private" : {
         "name" : {
@@ -126,6 +136,16 @@
           "phone" : "Phone",
           "message" : "Message",
           "send" : "Send"
+        },
+        "pholder" : {
+          "name" : "English or Korean",
+          "phone" : "000-0000-0000",
+          "email" : "abc@yourdomain.com"
+        },
+        "send" : {
+          "wrong" : ["Wrong", "value"],
+          "compl" : "Send Complete",
+          "close" : "Close"
         }
       }
     },
@@ -190,6 +210,16 @@
           "phone" : "電話番号",
           "message" : "メッセージ",
           "send" : "送る"
+        },
+        "pholder" : {
+          "name" : "英語又は韓国語",
+          "phone" : "000-0000-0000",
+          "email" : "abc@yourdomain.com"
+        },
+        "send" : {
+          "wrong" : ["間違った", "です"],
+          "compl" : "送信完了",
+          "close" : "閉じる"
         }
       }
     }
