@@ -4,6 +4,7 @@ import { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import i18n from "i18next"
 import {initReactI18next, useTranslation} from "react-i18next"
+import './Component.css'
 
 
 // Component

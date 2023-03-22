@@ -2,8 +2,12 @@ import { Link } from "react-router-dom"
 import {AiOutlineClose} from "react-icons/ai"
 import {CgMenuGridR} from "react-icons/cg"
 
-function Header({t}){
 
+
+function Header({t}){
+  window.addEventListener('resize', () => {
+   
+  })
   return(
     <header>
       <div id="headwrap">

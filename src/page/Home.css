@@ -1,0 +1,81 @@
+
+
+article#home{
+  height: 100vh;
+}
+div#homewrap{
+  position: relative;
+  height: 100%;
+}
+div#slogungall{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+div#slogungall>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400%;
+  height: 100%;
+  transition: all 0.45s ease-in-out;
+}
+
+div#slogungall>ul.slide0{
+  margin-left: 0;
+}
+div#slogungall>ul.slide1{
+  margin-left: -100%;
+}
+div#slogungall>ul.slide2{
+  margin-left: -200%;
+}
+div#slogungall>ul.slide3{
+  margin-left: -300%;
+}
+
+
+div#slogungall>ul>li{
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#slogungall>ul>li>p{
+  max-width: 40%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 2em;
+  padding: 0 30px;
+  
+}
+
+div#homewrap>p>svg{
+  display: block;
+  font-size: 48px;
+  cursor: pointer;
+}
+div#homewrap>p>svg>polyline{
+  stroke: rgb(255, 255, 255);
+}
+
+p.next{
+  position: absolute;
+  right: 30px; top: 50%;
+  margin-top: -24px;
+}
+
+p.prev{
+  position: absolute;
+  left: 30px; top: 50%;
+  margin-top: -24px;
+}
+
+@media screen and (min-width:1400px) {}
+@media screen and (min-width:980px) and (max-width : 1399.9px) {}
+@media screen and (min-width:580px) and (max-width : 979.9px) {}
+@media screen and (min-width:5px) and (max-width : 579.9px) {}
