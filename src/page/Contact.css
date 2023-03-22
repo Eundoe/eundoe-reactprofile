@@ -1,0 +1,118 @@
+article#contact{
+  padding:80px;
+}
+div#contwrap{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+div#contwrap>h2{
+width: 100%;
+ font-size: 38px; 
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+div#contdetail{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+div#myinfo{
+  width: 45%;
+}
+
+div#myinfo>dl{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+div#myinfo>dl>dt{
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+div#myinfo>dl>dt>svg{
+  margin: 0 10px;
+}
+
+div#myinfo>dl>dd{
+  width: 45%;
+  text-align: center;
+}
+
+div#myinfo>p{
+  margin: 20px 0;
+  padding: 5px;
+  height: 300px;
+}
+
+div#contdetail>form{
+  width: 45%;
+}
+
+div#contdetail>form>fieldset{}
+div#contdetail>form>fieldset>legend{}
+
+legend#contform{
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  padding: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+legend#contform>ul{
+  margin-bottom: 20px;
+}
+legend#contform>ul>li{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+legend#contform>ul>li>label{
+  width: 45%;
+  font-size: 22px;
+}
+
+legend#contform>ul>li>input{
+  width: 45%;
+  font-size: 22px;
+}
+
+legend#contform>ul>li>textarea{
+  width: 45%;
+  resize: none;
+  font-size: 22px;
+  height: 150px;
+}
+
+legend#contform>button{
+  font-size: 22px;
+  line-height: 1.8em;
+  padding: 0 20px;
+}
+
+legend#contform>button:active{
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (min-width:1400px) {}
+@media screen and (min-width:980px) and (max-width : 1399.9px) {}
+@media screen and (min-width:580px) and (max-width : 979.9px) {}
+@media screen and (min-width:5px) and (max-width : 579.9px) {}

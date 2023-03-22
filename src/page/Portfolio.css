@@ -1,0 +1,81 @@
+article#portfolio{
+  padding:80px;
+}
+div#portwrap{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+div#portwrap>h2{
+  width: 100%;
+ font-size: 38px; 
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+div#portwrap>ul{
+  width: 89%;
+}
+
+div#portwrap>ul>li{
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+div#portwrap>ul>li:last-child{
+  margin-bottom: 80px;
+}
+
+div#portwrap>ul>li>h3{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+div#portdetail{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div#portdetail>img{
+  display: block;
+  max-width: 430px;
+  padding: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+div#portdetail>div{
+  width: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+div#portdetail>div>dl{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+div#portdetail>div>dl>dt{
+  width: 40%;
+  line-height: 1.4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div#portdetail>div>dl>dt>svg{
+  margin: 0 10px;
+}
+
+
+@media screen and (min-width:1400px) {}
+@media screen and (min-width:980px) and (max-width : 1399.9px) {}
+@media screen and (min-width:580px) and (max-width : 979.9px) {}
+@media screen and (min-width:5px) and (max-width : 579.9px) {}

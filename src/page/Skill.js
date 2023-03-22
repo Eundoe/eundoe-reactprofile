@@ -7,7 +7,6 @@ function SkillGuage({detail}){
   function skillreset(){
     document.querySelector('div#skilldetail').classList.remove('show')
     document.querySelector('p#skillguage>img.show').style.width = '0%'
-    document.querySelector('p#skillguage>img').classList.remove('show')
   }
 
 

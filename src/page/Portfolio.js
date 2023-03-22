@@ -2,13 +2,14 @@
 import {RiToolsFill, RiCalendar2Fill} from "react-icons/ri"
 import {BiLinkAlt, BiLinkExternal} from "react-icons/bi"
 import {HiOutlineTicket} from "react-icons/hi"
+import './Portfolio.css'
 
 function PortDetail({t, item}){
     return (
       <div>
       <dl>
         <dt>
-          <span><RiCalendar2Fill/></span>
+          <RiCalendar2Fill/>
           <span>{t('portfolio.kind.period')}</span>
         </dt>
         <dd>
@@ -17,7 +18,7 @@ function PortDetail({t, item}){
       </dl>
       <dl >
         <dt>
-          <span><RiToolsFill/></span>
+          <RiToolsFill/>
           <span>{t('portfolio.kind.devtool')}</span>
         </dt>
         <dd>
@@ -26,31 +27,33 @@ function PortDetail({t, item}){
       </dl>
       <dl >
         <dt>
-          <span><BiLinkAlt/></span>
+          <BiLinkAlt/>
           <span>{t('portfolio.kind.domain')}</span>
         </dt>
-        <dd>
-          {item.path}
-        </dd>
+        <dd><a href={item.path} target="_blank" rel="noreferrer">
+        {t('portfolio.cont.domain')}
+          </a></dd>
       </dl>
       <dl >
         <dt>
-          <span><BiLinkExternal/></span>
+          <BiLinkExternal/>
           <span>{t('portfolio.kind.github')}</span>
         </dt>
         <dd>
-          {item.giturl}
+          <a href= {item.giturl} target="_blank" rel="noreferrer">
+            {t('portfolio.cont.github')}
+          </a>
         </dd>
       </dl>
-      <dl >
+      {/* <dl >
         <dt>
-          <span><HiOutlineTicket/></span>
+          <HiOutlineTicket/>
           <span>{t('portfolio.kind.detail')}</span>
         </dt>
         <dd>
           Click Here
         </dd>
-      </dl>
+      </dl> */}
       </div>
     )
 }

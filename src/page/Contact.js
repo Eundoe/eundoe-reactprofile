@@ -1,8 +1,8 @@
 import {RiKakaoTalkLine} from "react-icons/ri"
 import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai"
+import './Contact.css'
 
-
-function Contact({t}){
+function Contact({t, bdata}){
   return(
     <article id="contact">
       <div id="contwrap">
@@ -11,29 +11,29 @@ function Contact({t}){
           <div id="myinfo">
           <dl>
             <dt>
-              <span><RiKakaoTalkLine/></span>
+              <RiKakaoTalkLine/>
               <span>{t('contact.mypriv.chat')}</span>
             </dt>
             <dd>
-              컨텐츠
+              <a href={bdata.chat} target="_blank" rel="noreferrer">Click</a>
             </dd>
           </dl>
           <dl>
             <dt>
-              <span><AiOutlineMail/></span>
+              <AiOutlineMail/>
               <span>{t('contact.mypriv.email')}</span>
             </dt>
             <dd>
-              컨텐츠
+              {bdata.mail}
             </dd>
           </dl>
           <dl>
             <dt>
-              <span><AiOutlinePhone/></span>
+              <AiOutlinePhone/>
               <span>{t('contact.mypriv.phone')}</span>
             </dt>
             <dd>
-              컨텐츠
+            {bdata.phone}
             </dd>
           </dl>
           <p>
@@ -42,7 +42,7 @@ function Contact({t}){
           </div>
           <form>
             <fieldset>
-              <legend>
+              <legend id="contform">
                 <ul>
                   <li>
                     <label htmlFor="uname">{t('contact.form.name')}</label>

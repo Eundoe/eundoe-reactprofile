@@ -62,7 +62,7 @@ function App(){
             <Route path ="/about" element ={<About t = {t}/>}/>
             <Route path ="/skill" element={<Skill t = {t} bdata = {baseData.skill}/>}/>
             <Route path ="/portfolio" element={<Portfolio t = {t} bdata = {baseData.portfolio}/>}/>
-            <Route path ="/contact" element={<Contact t = {t}/>}/>
+            <Route path ="/contact" element={<Contact t = {t} bdata = {baseData.contact}/>}/>
           </Routes>
       </div>
       <Translate change = {ChangeLng}/>

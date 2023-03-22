@@ -44,6 +44,10 @@
           "domain" : "도메인",
           "github" : "깃허브",
           "detail" : "상세보기"
+        },
+        "cont" : {
+          "domain" : "사이트 방문",
+          "github" : "상세보기"
         }
       },
       "contact" : {
@@ -104,6 +108,10 @@
           "domain" : "Domain",
           "github" : "GitHub",
           "detail" : "Detail"
+        },
+        "cont" : {
+          "domain" : "Visit Site",
+          "github" : "Show Detail"
         }
       },
       "contact" : {
@@ -162,8 +170,12 @@
           "period" : "製作期間",
           "devtool" : "開発環境",
           "domain" : "ドメイン",
-          "github" : "開発ページ",
+          "github" : "ギッドハブ",
           "detail" : "詳しく"
+        },
+        "cont" : {
+          "domain" : "サイト訪問",
+          "github" : "詳しく見る"
         }
       },
       "contact" : {
@@ -302,5 +314,10 @@
         "period" : "2023.02.18 ~ 2023.02.27",
         "giturl" : "https://github.com/Eundoe/eundoe-tourbookingPVPF"
       }
-    ]
+    ],
+    "contact" : {
+      "chat" : "https://open.kakao.com/me/deveundo",
+      "mail" : "eundoe92@proton.me",
+      "phone" : "XXX-XXXX-XXXX"
+    }
 }
