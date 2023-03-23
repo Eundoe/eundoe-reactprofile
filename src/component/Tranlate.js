@@ -9,13 +9,11 @@ function Translate({change}){
   }
 
   return(
-    <aside>
       <ul id="translate">
         <li className="lngselected" onClick={(e) => ChangeLng(e.target)}>KR</li>
         <li onClick={(e) => ChangeLng(e.target)}>JP</li>
         <li onClick={(e) => ChangeLng(e.target)}>EN</li>
       </ul>
-    </aside>
   )
 }
 

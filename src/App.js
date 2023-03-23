@@ -1,6 +1,5 @@
 
 // Library
-import { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import i18n from "i18next"
 import {initReactI18next, useTranslation} from "react-i18next"
@@ -10,7 +9,6 @@ import './Component.css'
 // Component
 import Header from "./component/Header"
 import Footer from "./component/Footer"
-import Translate from "./component/Tranlate"
 import Home from "./page/Home"
 import About from "./page/About"
 import Skill from "./page/Skill"
@@ -55,7 +53,7 @@ function App(){
 
   return(
     <BrowserRouter>
-      <Header t = {t} />
+      <Header t = {t} change = {ChangeLng}/>
       <div id="wrap">
           <Routes>
             <Route path ="/" element ={<Home t= {t} slogun = {baseData.slogun}/>}/>
@@ -65,7 +63,7 @@ function App(){
             <Route path ="/contact" element={<Contact t = {t} bdata = {baseData.contact}/>}/>
           </Routes>
       </div>
-      <Translate change = {ChangeLng}/>
+      
       <Footer />
     </BrowserRouter>
   )

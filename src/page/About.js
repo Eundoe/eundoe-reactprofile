@@ -9,7 +9,7 @@ function About({t}){
       <div id="aboutwrap">
         <h2>{t('menu.about')}</h2>
         <div  id="priv">
-          <img src="./Images/mychar.png" alt="mychar"/>
+          <img src="./Images/mychar.png" alt="mychar"/>d
           <div>
           <dl>
             <dt className="ptitle">
