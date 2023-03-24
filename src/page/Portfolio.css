@@ -1,5 +1,5 @@
 article#portfolio{
-  padding:80px;
+  padding:80px 40px;
 }
 div#portwrap{
   height: 100%;
@@ -43,7 +43,7 @@ div#portdetail{
 
 div#portdetail>img{
   display: block;
-  max-width: 430px;
+  max-width: 39.81481481481481%;
   padding: 6px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -73,9 +73,105 @@ div#portdetail>div>dl>dt{
 div#portdetail>div>dl>dt>svg{
   margin: 0 10px;
 }
+div#portdetail>div>dl>dd{}
 
 
 @media screen and (min-width:1400px) {}
-@media screen and (min-width:980px) and (max-width : 1399.9px) {}
-@media screen and (min-width:580px) and (max-width : 979.9px) {}
-@media screen and (min-width:5px) and (max-width : 579.9px) {}
+@media screen and (min-width:980px) and (max-width : 1400px) {
+  article#portfolio{
+    padding:80px 10px;
+  }
+  div#portwrap>ul{
+    width: 95%;
+  }
+  div#portdetail>div>dl{
+    font-size: 18px;
+  }
+
+
+}
+@media screen and (min-width:580px) and (max-width : 980px) {
+  article#portfolio{
+    padding: 30px 0;
+    height: calc(100vh - 185px);
+    overflow-y: scroll;
+    margin: 5px 0;
+  }
+
+  div#portwrap>ul{
+    width: 96%;
+  }
+
+  div#portdetail{
+    display: block;
+  }
+
+  div#portdetail>img{
+    display: block;
+    max-width: 45%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  div#portdetail>div{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  div#portdetail>div>dl{
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  div#portdetail>div>dl>dt{
+    text-align: center;
+  }
+  div#portdetail>div>dl>dd{
+    width: 60%;
+    text-align: center;
+  }
+
+
+}
+@media screen and (min-width:5px) and (max-width : 580px) {
+  article#portfolio{
+    padding: 30px 0;
+    height: calc(100vh - 185px);
+    overflow-y: scroll;
+    margin: 5px 0;
+  }
+
+  div#portwrap>ul{
+    width: 96%;
+  }
+
+  div#portdetail{
+    display: block;
+  }
+
+  div#portdetail>img{
+    display: block;
+    max-width: 45%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  div#portdetail>div{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  div#portdetail>div>dl{
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  div#portdetail>div>dl>dt{
+    text-align: center;
+  }
+  div#portdetail>div>dl>dd{
+    width: 60%;
+    text-align: center;
+  }
+
+}

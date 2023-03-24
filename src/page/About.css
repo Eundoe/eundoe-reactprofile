@@ -92,6 +92,7 @@ div#priv>div>dl>dd{
   }
   div#priv>div>dl:last-child{
     width: 93.7%;
+    margin: 0;
   }
   
 

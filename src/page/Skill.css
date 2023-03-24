@@ -95,6 +95,86 @@ div#skilldetail>p#gageclose>svg{
 }
 
 @media screen and (min-width:1400px) {}
-@media screen and (min-width:980px) and (max-width : 1399.9px) {}
-@media screen and (min-width:580px) and (max-width : 979.9px) {}
-@media screen and (min-width:5px) and (max-width : 579.9px) {}
+@media screen and (min-width:980px) and (max-width : 1399.9px) {
+  div#skillwrap>ul>li>img{
+    padding: 5px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+@media screen and (min-width:580px) and (max-width : 979.9px) {
+  article#skill{
+    height: calc(100vh - 185px);
+    padding: 30px 0;
+  }
+  div#skillwrap>ul{
+    width: 98%
+  }
+
+  div#skillwrap>ul>li>img{
+    padding: 5px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  div#skilldetail{
+    box-sizing: border-box;
+    width: 95%;
+    background-color: #000;
+    border-radius: 3px;
+  }
+  div#skilldetail>h3{
+    color: #fff;
+  }
+  p#skillguage{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  div#skilldetail>p#gageclose>svg{
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+
+}
+@media screen and (min-width:5px) and (max-width : 579.9px) {
+  article#skill{
+    height: calc(100vh - 185px);
+    padding: 30px 0;
+  }
+  div#skillwrap>ul{
+    width: 98%
+  }
+
+  div#skillwrap>ul>li{
+    text-align: center;
+    width: calc(100% / 4);
+    margin: 10px 0;
+  }
+
+  div#skillwrap>ul>li>img{
+    padding: 5px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  div#skilldetail{
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #000;
+    border-radius: 3px;
+  }
+
+  div#skilldetail>h3{
+    color: #fff;
+  }
+  p#skillguage{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  div#skilldetail>p#gageclose>svg{
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+}

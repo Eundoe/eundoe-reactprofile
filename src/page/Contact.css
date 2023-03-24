@@ -146,6 +146,129 @@ div#modalwrap>p#modalclose{
 }
 
 @media screen and (min-width:1400px) {}
-@media screen and (min-width:980px) and (max-width : 1399.9px) {}
-@media screen and (min-width:580px) and (max-width : 979.9px) {}
-@media screen and (min-width:5px) and (max-width : 579.9px) {}
+@media screen and (min-width:980px) and (max-width : 1400px) {
+  article#contact{
+    padding:80px 10px;
+  }
+
+  div#myinfo{
+    width: 48%;
+  }
+  div#contdetail>form{
+    width: 48%;
+  }
+
+  div#myinfo>dl{
+    font-size: 16px;
+  }
+  legend#contform>ul>li>label{
+    font-size: 16px;
+  }
+  
+  legend#contform>ul>li>input{
+    font-size: 16px;
+  }
+
+}
+@media screen and (min-width:580px) and (max-width : 980px) {
+  article#contact{
+    height: calc(100vh - 185px);
+    padding: 30px 10px;
+    overflow-y: scroll;
+  }
+
+  div#contdetail{
+    display: block;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+
+  div#myinfo{
+    width: 100%;
+    margin: 0 auto;
+  }
+  div#myinfo>dl{
+    justify-content: space-around;
+    font-size: 16px;
+  }
+  div#myinfo>dl>dt{
+    justify-content: center;
+  }
+  
+  div#contdetail>form{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  legend#contform{
+    width: 100%;
+  }
+  div#myinfo>p{
+    height: 150px;
+  }
+  legend#contform>ul>li>label{
+    font-size: 16px;
+  }
+  
+  legend#contform>ul>li>input{
+    font-size: 16px;
+  }
+
+
+
+}
+@media screen and (min-width:5px) and (max-width : 580px) {
+  article#contact{
+    height: calc(100vh - 185px);
+    padding: 30px 10px;
+    overflow-y: scroll;
+  }
+
+  div#contdetail{
+    display: block;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+
+  div#myinfo{
+    width: 100%;
+    margin: 0 auto;
+  }
+  div#myinfo>dl{
+    display: none;
+  }
+  
+  div#contdetail>form{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  legend#contform{
+    width: 100%;
+  }
+  legend#contform>ul>li{
+    margin-bottom: 20px;
+    display: block;
+  }
+  legend#contform>ul>li>label{
+    display: block;
+    text-align: start;
+    width: 90%;
+    font-size: 16px;
+    margin: 0 auto 5px;
+  }
+  
+  legend#contform>ul>li>input{
+    display: block;
+    width: 90%;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  legend#contform>ul>li>textarea{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  div#myinfo>p{
+    height: 200px;
+  }
+}
