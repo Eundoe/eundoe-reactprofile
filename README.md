@@ -2,13 +2,15 @@
 ## 소개
 > 저라는 사람에 대해서 나타내고자 만든 자기소개 사이트입니다.
 
+> 구버전 깃허브는 하기로 이동해 주시기바랍니다. 
+
 > [바로가기](https://github.com/Eundoe/eundoe-reactprofile)
 
 ---
 ## 배포링크
 > 배포방식은 AWS: S3의 간이 배포를 이용하였습니다.
 
-> [바로가기](http://eundoe-myintro.s3-website.ap-northeast-2.amazonaws.com/)
+> [바로가기](https://github.com/Eundoe/eundoe-myprofile/)
 
 ---
 ## 개발 도구 및 환경
