@@ -30,7 +30,7 @@ function PortDetail({t, item}){
           <BiLinkAlt/>
           <span>{t('portfolio.kind.domain')}</span>
         </dt>
-        <dd><a href={item.path} target="_blank" rel="noreferrer">
+        <dd><a href={item.path} target="_blank" rel="noreferrer" style={{color : "red"}}>
         {t('portfolio.cont.domain')}
           </a></dd>
       </dl>
@@ -40,20 +40,11 @@ function PortDetail({t, item}){
           <span>{t('portfolio.kind.github')}</span>
         </dt>
         <dd>
-          <a href= {item.giturl} target="_blank" rel="noreferrer">
+          <a href= {item.giturl} target="_blank" rel="noreferrer" style={{color : "red"}}>
             {t('portfolio.cont.github')}
           </a>
         </dd>
       </dl>
-      {/* <dl >
-        <dt>
-          <HiOutlineTicket/>
-          <span>{t('portfolio.kind.detail')}</span>
-        </dt>
-        <dd>
-          Click Here
-        </dd>
-      </dl> */}
       </div>
     )
 }

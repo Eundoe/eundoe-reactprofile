@@ -68,7 +68,7 @@ function Contact({t, bdata}){
               <span>{t('contact.mypriv.chat')}</span>
             </dt>
             <dd>
-              <a href={bdata.chat} target="_blank" rel="noreferrer">Click</a>
+              <a href={bdata.chat} target="_blank" rel="noreferrer" style={{color : "red"}}>Click</a>
             </dd>
           </dl>
           <dl>
